@@ -21,7 +21,7 @@ from ..sql_helper.globals import gvarstatus
 from . import mention
 
 
-@jmub.ar_cmd(pattern="فحص$")
+@jmub.ar_cmd(pattern="$")
 async def amireallyalive(event):
     reply_to_id = await reply_id(event)
     ANIME = None
