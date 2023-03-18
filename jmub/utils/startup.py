@@ -129,8 +129,8 @@ async def startupmessage():
                 await jmub.tgbot.send_file(
                     BOTLOG_CHATID,
                     "https://telegra.ph/file/0dae5bca0aa780ff0c7bd.mp4",
-                    caption="**شكرا لتنصيبك السورس**\n • هنا بعض الملاحظات التي يجب ان تعرفها عن استخدامك للسورس.",
-                    buttons=[(Button.inline("اضغط هنا", data="initft_2"),)],
+                    caption="**شكرا لتنصيبك السورس**",
+                    buttons=[(Button.url("المطور", "https://t.me/hsshh"),)],
                 )
                 addgvar("DEPLOY", "Done")
         except Exception as e:
