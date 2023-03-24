@@ -105,7 +105,7 @@ def gen_user(choice):
 async def _(event):
     await event.edit(
         """
-أوامر الصيد الخاصة بسورس جمثون : 
+أوامر الصيد الخاصة بسورس النجار : 
 
 ٴ— — — — — — — — — —
 
@@ -118,13 +118,13 @@ async def _(event):
 * وظيفة الامر : يقوم بالتثبيت على المعرف عندما يصبح متاح يأخذه
 
 ٴ— — — — — — — — — —
-الامر:   `.حالة الصيد`
+`الامر:   `.حالة الصيد`
 • لمعرفة عدد المحاولات للصيد
 
-الامر:  `.حالة التثبيت`
+`الامر:  `.حالة التثبيت`
 • لمعرفة عدد المحاولات للصيد
 
-@jmthon  - channle userbot 
+@hsshh  -  Developer
 
 """
     )
@@ -143,8 +143,8 @@ async def hunterusername(event):
         try:
             ch = await jmub(
                 functions.channels.CreateChannelRequest(
-                    title="JMTHON HUNTER - صيد جمثون",
-                    about="This channel to hunt username by - @jmthon ",
+                    title="الصيد الراقي",
+                    about="هاي القناة جاي تصيد معرف ❗️ ",
                 )
             )
             ch = ch.updates[1].channel_id
@@ -170,7 +170,7 @@ async def hunterusername(event):
                 )
                 await event.client.send_message(
                     event.chat_id,
-                    f"- Done : @{username} !\n- By : @R0R77 - @JMTHON !\n- Hunting Log {trys2[0]}",
+                    f"لك وصدنالك المعرف باع : @{username} !\n- تعال حول الرسالة اليه : @hsshh\n- صدت اليوزر من محاولات: {trys2[0]}",
                 )
                 break
             except telethon.errors.rpcerrorlist.UsernameInvalidError:
@@ -213,8 +213,8 @@ async def _(event):
         try:
             ch = await jmub(
                 functions.channels.CreateChannelRequest(
-                    title="JMTHON HUNTER - صيد جمثون",
-                    about="This channel to hunt username by - @jmthon ",
+                    title="الصيد الراقي",
+                    about="هاي القناة جاي تصيد معرف ❗️ ",
                 )
             )
             ch = ch.updates[1].channel_id
@@ -238,7 +238,7 @@ async def _(event):
                 )
                 await event.client.send_message(
                     event.chat_id,
-                    f"- Done : @{username} !\n- By : @R0R77 - @JMTHON !\n- Hunting Log {trys2[0]}",
+                    f"لك وصدنالك المعرف باع : @{username} !\n-  تعال حول الرسالة اليه خل اباركلك : @hsshh\n- صدت اليوزر من محاولات: {trys2[0]}",
                 )
                 break
             except telethon.errors.rpcerrorlist.UsernameInvalidError:
@@ -272,7 +272,7 @@ async def _(event):
     if "on" in isclaim:
         await event.edit(f"**- الصيد وصل لـ({trys[0]}) **من المحاولات")
     elif "off" in isclaim:
-        await event.edit("**- الصيد بالاصل لا يعمل .**")
+        await event.edit("** ترا الصيد اصلا مايتشغل 😂 **")
     else:
         await event.edit("- لقد حدث خطأ ما وتوقف الامر لديك")
 
@@ -282,6 +282,6 @@ async def _(event):
     if "on" in isauto:
         await event.edit(f"**- التثبيت وصل لـ({trys2[0]}) من المحاولات**")
     elif "off" in isauto:
-        await event.edit("**- التثبيت بالاصل لا يعمل .**")
+        await event.edit("** ترا التثبيت اصلا مايشتغل 😂 **")
     else:
         await event.edit("-لقد حدث خطأ ما وتوقف الامر لديك")
